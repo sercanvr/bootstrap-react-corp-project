@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32"  href="favicon-32x32.png">
+    <title>React Corp.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+<!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="/"><span class="text-info">React</span> Corp.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/">Ana Sayfa</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">HTML</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CSS</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bootstrap</a>
+              </li>
+                    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">JavaScript</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ReactJS</a>
+                </li>
+              </ul>
+
+              <form class="d-flex" method="post" action="/search/">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="1IcEXVTEo3iOSRkCYvgdqbXFoKKDoFV2PRURgO8y9d77b3zilbNjUNEhQ1jX5uAP">
+                  <input class="form-control me-2 bg-dark text-info" type="search" placeholder="Neye Bakmıştınız?" aria-label="Search">
+                  <div class="opacity-55">
+                    <i class="btn bg-light text-info " type="search">Ara</i>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </nav>
+<!-- NAV END -->
+
+<!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="react-left.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="react-middle.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="react-right.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Öncesi</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sonrası</span>
+      </button>
+    </div>
+<!-- CAROUSEL END -->
+
+    <div class="container">
+<!-- INFO -->
+      <div class="row mt-3">
+        <div class="col-sm-6">
+          <h2>"ReactJS Hakkında"</h2>
+          <p>React kullanıcı arayüzü oluşturmaya yarayan açık kaynak kodlu bir javascript kütüphanesidir. Facebook önderliğinde bir geliştirici grubu tarafından geliştirilmekte olan React, Model-View-Controller prensibine uygun olarak oluşturulmuştur.</p>
+          <p>İlk piyasaya sunulma tarihi: 29 Mayıs 2013</p>
+          <ul>
+            <li>Platform: Web platform</li>
+            <li>Geliştirici(ler): Facebook ve geliştirici grubu</li>
+            <li>Güncel sürüm: 17.0.2 / 22 Mart 2021 (20 ay önce)</li>
+            <li>İlk yayınlanma: Mayıs 2013</li>
+            <li>Programlama dili: JavaScript</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <img src="rct.jpg" alt="" class="w-100">
+        </div>
+      </div>
+<!-- INFO END -->
+
+<!-- PRODUCTS -->
+<div class="row mt-4">
+    <div class="col-sm-4">
+        <div class="card">
+          <img src="css.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">Cascading Style Sheets, HTML'e ek olarak metin ve format biçimlendirme alanında fazladan olanaklar sunan bir işaretleme dilidir.</p>
+            <a href="#" class="btn btn-primary">Göz At</a>
+          </div>
+        </div>
+    </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="bootstrap.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">Twitter Bootstrap açık kaynak kodlu, web sayfaları veya uygulamaları geliştirmek için kullanılabilecek araçlar bütünü ve önyüz çatısı. Bootstrap, web sayfaları veya uygulamalarında kullanılabilecek, HTML ve CSS tabanlı tasarım şablonlarını içerir.</p>
+              <a href="#" class="btn btn-primary">Göz At</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="javascript.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">JavaScript, HTML ve CSS ile birlikte World Wide Web'in temel teknolojilerinden biri olan programlama dilidir. Web sitelerinin %97'sinden fazlası, web sayfası hareketleri için istemci tarafında JavaScript kullanırlar ve kullanılan kodlar genellikle üçüncü taraf kitaplıkları içerir. </p>
+              <a href="#" class="btn btn-primary">Göz At</a>
+            </div>
+          </div>
+        </div>
+<!-- PRODUCTS END -->
+</div>
+
+<!-- FOOTER -->
+<div class="container">
+  <footer class="pt-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+        <small class="d-block mb-3 text-muted">Copyright © 2023 Meta Platforms, Inc.</small>
+      </div>
+      <div class="col-6 col-md text-info">
+        <h5>BELGELER</h5>
+        <ul class="list-unstyled text-small">
+          <li class="link-secondary">Installation</li>
+          <li class="link-secondary">Main Concepts</li>
+          <li class="link-secondary">Advanced Guides</li>
+          <li class="link-secondary">FAQ</li>
+        </ul>
+      </div>
+      <div class="col-6 col-md text-info">
+        <h5>KANALLAR</h5>
+        <ul class="list-unstyled text-small">
+          <li class="link-secondary">GitHub</li>
+          <li class="link-secondary">Stack Overflow</li>
+          <li class="link-secondary">Facebook</li>
+          <li class="link-secondary">Twitter</li>
+        </ul>
+      </div>
+      <div class="col-6 col-md text-info">
+        <h5>TOPLUM</h5>
+        <ul class="list-unstyled text-small">
+          <li class="link-secondary">Code of Conduct</li>
+          <li class="link-secondary">Community Resources</li>
+        </ul>
+      </div>
+      <div class="col-6 col-md text-info">
+        <h5>DİĞER</h5>
+        <ul class="list-unstyled text-small">
+          <li class="link-secondary">Tutorial</li>
+          <li class="link-secondary">Blog</li>
+          <li class="link-secondary">Privacy</li>
+          <li class="link-secondary">Terms</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+</footer>
+</div>
+
+<!-- FOOTER END -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
